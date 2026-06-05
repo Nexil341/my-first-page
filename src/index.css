@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background: #0f0f12;
+    color: #fff;
+}
