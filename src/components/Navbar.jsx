@@ -6,7 +6,6 @@ export default function Navbar() {
 
     const closeMenu = () => setIsOpen(false);
 
-
     const navLinkClass = ({ isActive }) =>
         isActive
             ? `
@@ -16,6 +15,8 @@ export default function Navbar() {
                 px-[1.15rem]
                 py-[0.8rem]
                 rounded-[14px]
+                transition-all
+                duration-300
                 text-blue-500
                 bg-[rgba(59,130,246,0.12)]
                 backdrop-blur-xl
@@ -37,8 +38,6 @@ export default function Navbar() {
                 hover:shadow-[0_8px_24px_rgba(0,0,0,0.25),inset_0_1px_1px_rgba(255,255,255,0.08)]
                 hover:-translate-y-[2px]
             `;
-
-
 
     return (
         <nav className="w-full px-16 py-5 flex justify-between items-center relative z-100 max-md:px-6 max-md:py-4">
@@ -72,10 +71,7 @@ export default function Navbar() {
                     max-md:backdrop-blur-[25px]
                     max-md:shadow-[0_20px_40px_rgba(0,0,0,0.3)]
 
-                    ${isOpen
-                        ? "max-md:flex"
-                        : "max-md:hidden"
-                    }
+                    ${isOpen ? "max-md:flex" : "max-md:hidden"}
                 `}
             >
                 <div className="flex items-center gap-[0.35rem] max-md:flex-col max-md:w-full">
