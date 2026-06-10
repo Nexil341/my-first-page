@@ -42,11 +42,14 @@ export default function Navbar() {
     return (
         <nav className="w-full px-16 py-5 flex justify-between items-center relative z-100 max-md:px-6 max-md:py-4">
             <div>
-                <h1 className="text-[1.9rem] font-extrabold tracking-tight">
-                    <span className="bg-linear-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                        SimpleFastWeb
-                    </span>
-                </h1>
+
+                <a href="/">
+                    <h1 className="text-[1.9rem] font-extrabold tracking-tight">
+                        <span className="bg-linear-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                            SimpleFastWeb
+                        </span>
+                    </h1></a>
+
             </div>
 
             <button
